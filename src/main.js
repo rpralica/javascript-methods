@@ -1,4 +1,14 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-
-createApp(App).mount('#app')
+import { createApp } from 'vue';
+import App from './App.vue';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
+import ThreePics from './components/ThreePics.vue';
+import ImutableMethods from './components/ImutableMethods.vue';
+import MutableMethods from './components/MutableMethods.vue';
+import SearchMethods from './components/SearchMethods.vue';
+const app = createApp(App);
+app.component('three-pics', ThreePics);
+app.component('imutable-methods', ImutableMethods);
+app.component('mutable-methods', MutableMethods);
+app.component('search-methods', SearchMethods);
+app.mount('#app');
