@@ -1,4 +1,4 @@
-# prazan-projekt
+# javascript-array-methods
 
 ## Project setup
 ```
